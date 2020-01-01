@@ -7,4 +7,4 @@ Installs a locally compiled copy of the
 
 Installation:
 
-   npm install node_xplain2sql
+    npm install node_xplain2sql
