@@ -1,10 +1,10 @@
 {
   "name": "node_xplain2sql",
-  "version": "5.2.0",
+  "version": "5.3.0",
   "description": "Makes a local compiled xplain2sql binary available.",
   "main": "index.js",
   "scripts": {
-    "preinstall": "dir=$PWD version=5.2.0 && cd /tmp && curl -s -o xplain2sql-$version-csrc.tar.gz http://www.berenddeboer.net/xplain2sql/xplain2sql-$version-csrc.tar.gz && tar xvf xplain2sql-$version-csrc.tar.gz && cd xplain2sql-$version && make && cd $dir && mkdir -p bin && mv /tmp/xplain2sql-$version/xplain2sql bin/",
+    "preinstall": "dir=$PWD version=5.3.0 && cd /tmp && curl -s -o xplain2sql-$version-csrc.tar.gz http://www.berenddeboer.net/xplain2sql/xplain2sql-$version-csrc.tar.gz && tar xvf xplain2sql-$version-csrc.tar.gz && cd xplain2sql-$version && make && cd $dir && mkdir -p bin && mv /tmp/xplain2sql-$version/xplain2sql bin/",
     "test": "xplain2sql -version"
   },
   "bin": {
